@@ -13,7 +13,7 @@ I'm a passionate front-end developer who loves to code and build things.
 
 Here are some of the projects I'm proud of:
 
-- [Digital Business Card]([GitHub](https://github.com/oglenyaboss/digitalbusinesscard)): Your personal website.
+- [Digital Business Card](https://github.com/oglenyaboss/digitalbusinesscard): Your personal website.
 
 ## Skills
 
