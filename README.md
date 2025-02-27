@@ -1,4 +1,5 @@
 [![wakatime](https://wakatime.com/badge/user/0627f985-4344-4b37-b74f-0b41b787dfeb.svg)](https://wakatime.com/@0627f985-4344-4b37-b74f-0b41b787dfeb)
+[![Github Readme Codewars](https://codewars-stats-ignacio-cuadra.vercel.app/?username=oglenyaboss)](https://github.com/ignacio-cuadra/github-readme-codewars)
 # Hello, I'm Lenya
 
 
