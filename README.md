@@ -1,64 +1,66 @@
-[![wakatime](https://wakatime.com/badge/user/0627f985-4344-4b37-b74f-0b41b787dfeb.svg)](https://wakatime.com/@0627f985-4344-4b37-b74f-0b41b787dfeb)
+# Hi, I'm Lenya
 
-# Привет! Я Лёня
+Full-stack web developer and 1st-year Master's student.  
+I build practical systems with clear architecture, containerized environments, and production-style APIs.
 
-## Обо мне
-- 🎓 Студент 1 курса магистратуры технического университета
-- 👨‍💻 Фулстек веб-разработчик
-- 📱 В настоящее время разрабатываю web3wms
-- 🌱 Активно изучаю **Go** и **RabbitMQ**
-- 🎯 21 год, нацелен на постоянное развитие
+## 🚀 Featured (public) project
 
-## 🛠️ Мой технологический стек
+- **[web3wms](https://github.com/oglenyaboss/web3wms)** — Warehouse Management System + equipment tracking with an auditable transfer history.
+  - Microservices communicating via **REST** and **RabbitMQ**
+  - **MongoDB** as primary storage (separated by service databases)
+  - MVP on-chain audit via **Ethereum (Ganache)** + smart contracts
+  - **Docker Compose** for local deployment
+  - Frontend: **Next.js** + **Mantine UI**
 
-<div align="center">
-  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/-Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js" />
-  <img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-</div>
+### web3wms architecture (short)
+- Services:
+  - **auth-service** (Go) — auth, roles, user profiles, ETH address mapping
+  - **warehouse-service** (Go) — inventory, transactions, invoices, master data
+  - **tracking-service** (Node.js/Express) — equipment lifecycle + blockchain integration
+  - **notification-service** (Go) — notifications (MVP: in-memory; DB reserved for later)
+  - **analytics-service** (Go) — minimal stub (not in compose)
+- Messaging (RabbitMQ):
+  - `equipment.created` → tracking-service
+  - `equipment.transferred` → notification-service
+- Storage (MongoDB):
+  - `warehouse_auth`, `warehouse_inventory`, `warehouse_tracking`
 
-## 📚 Изучаю
+## 🎓 Current university project (HSE MIEM, 2025/2026)
 
-<div align="center">
+- **Project #2340 — “Blockchain-based warehouse accounting system”**  
+  https://cabinet.miem.hse.ru/project/2340/  
+  - Goal: build a functional prototype of a blockchain system for warehouse accounting to improve reliability and transparency.  
+  - Expected deliverables (per project passport): smart contracts for **receiving**, **putaway**, **picking**, **shipping**; a blockchain application (based on **Hyperledger Fabric or an alternative**); and a **user interface**.  
+  - Milestones: start **2025-11-04**, defense window **2026-06-08 – 2026-06-19**.
+
+### #2340 architecture (concise, safe to state)
+- Modular prototype: **smart-contract layer** (warehouse flow contracts) + **application layer** (API/services) + **UI layer**.  
+- Tech direction: **Go** + **JavaScript** (and related tooling) as stated in tags.  
+- DLT platform: **Hyperledger Fabric (or alternative)** under evaluation.  
+
+## 🛠️ Tech stack
+
+**Backend:** Go, Node.js, NestJS, Express  
+**Frontend:** TypeScript, React, Next.js, Mantine UI  
+**Databases:** MongoDB  
+**Messaging:** RabbitMQ, Kafka  
+**Blockchain:** Ethereum (Ganache for MVP), Hyperledger Fabric (evaluation)  
+**Infrastructure:** Docker, Docker Compose
+
+## 🔬 Currently learning
+
+<div align="left">
   <img src="https://img.shields.io/badge/-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" alt="RabbitMQ" />
+  <img src="https://img.shields.io/badge/-Apache%20Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka" />
 </div>
 
-## 🔭 Текущие проекты
+## 📫 Contact
 
-- web3wms
+- Telegram: https://t.me/ll_ogl  
+- Email: oglenyaboss@icloud.com
 
-## 📫 Связаться со мной
-
-<div align="center">
-  <a href="https://t.me/ll_ogl">
-    <img src="https://img.shields.io/badge/-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-  </a>
-  <a href="mailto:oglenyaboss@icloud.com">
-    <img src="https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</div>
-
-## 📊 GitHub Статистика
+## 📊 GitHub stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=oglenyaboss&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oglenyaboss&layout=compact&theme=tokyonight" alt="Top Languages" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=oglenyaboss&theme=tokyonight" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=oglenyaboss&theme=nord&column=7" alt="GitHub Trophies" />
 </div>
