@@ -3,6 +3,15 @@
 Full-stack web developer and 1st-year Master's student.  
 I build practical systems with clear architecture, containerized environments, and production-style APIs.
 
+## 💼 Recent work (production case study)
+
+- **Event-driven webhook processing platform (work project, private)**
+  - Purpose: ingest webhooks from multiple sources and deliver normalized events into a CRM
+  - Architecture: microservices + event streaming (**Kafka**), event-sourcing approach
+  - Stack: **NestJS**, Node.js, Docker, GitHub Actions (CI/CD), Next.js (internal UI), ELK for observability
+  - Load test results: **~830 webhooks/sec ingestion**, **~400 webhooks/sec delivery** (CRM outbound)
+  - Ownership: designed, implemented, tuned, and load-tested end-to-end
+
 ## 🚀 Featured (public) project
 
 - **[web3wms](https://github.com/oglenyaboss/web3wms)** — Warehouse Management System + equipment tracking with an auditable transfer history.
@@ -29,14 +38,14 @@ I build practical systems with clear architecture, containerized environments, a
 
 - **Project #2340 — “Blockchain-based warehouse accounting system”**  
   https://cabinet.miem.hse.ru/project/2340/  
-  - Goal: build a functional prototype of a blockchain system for warehouse accounting to improve reliability and transparency.  
-  - Expected deliverables (per project passport): smart contracts for **receiving**, **putaway**, **picking**, **shipping**; a blockchain application (based on **Hyperledger Fabric or an alternative**); and a **user interface**.  
-  - Milestones: start **2025-11-04**, defense window **2026-06-08 – 2026-06-19**.
+  - Goal: build a functional prototype of a blockchain system for warehouse accounting to improve reliability and transparency
+  - Expected deliverables: smart contracts for **receiving**, **putaway**, **picking**, **shipping**; a blockchain application (based on **Hyperledger Fabric or an alternative**); and a **user interface**
+  - Milestones: start **2025-11-04**, defense window **2026-06-08 – 2026-06-19**
 
-### #2340 architecture (concise, safe to state)
-- Modular prototype: **smart-contract layer** (warehouse flow contracts) + **application layer** (API/services) + **UI layer**.  
-- Tech direction: **Go** + **JavaScript** (and related tooling) as stated in tags.  
-- DLT platform: **Hyperledger Fabric (or alternative)** under evaluation.  
+### #2340 architecture (concise)
+- Modular prototype: **smart-contract layer** (warehouse flow contracts) + **application layer** (API/services) + **UI layer**
+- Tech direction: **Go** + **JavaScript**
+- DLT platform: **Hyperledger Fabric (or alternative)** under evaluation
 
 ## 🛠️ Tech stack
 
@@ -45,7 +54,8 @@ I build practical systems with clear architecture, containerized environments, a
 **Databases:** MongoDB  
 **Messaging:** RabbitMQ, Kafka  
 **Blockchain:** Ethereum (Ganache for MVP), Hyperledger Fabric (evaluation)  
-**Infrastructure:** Docker, Docker Compose
+**Infrastructure:** Docker, Docker Compose, GitHub Actions  
+**Observability:** ELK
 
 ## 🔬 Currently learning
 
