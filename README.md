@@ -26,7 +26,7 @@ Built solo in about 8 months, now serving ~20 clients. NestJS, Node, Docker, Git
 
 ### Open source
 
-[Repowise](https://github.com/Repowise/repowise) (6k+ stars): added OpenRouter as an LLM and embeddings provider. Also maintain pi extensions and OpenCode plugins for LLM coding workflows.
+[Repowise](https://github.com/Repowise/repowise): added OpenRouter as an LLM and embeddings provider. Also maintain pi extensions and OpenCode plugins for LLM coding workflows.
 
 ## Stack I actually reach for
 
